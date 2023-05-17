@@ -11,6 +11,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Run test
+      - env
       - echo $CODEBUILD_SOURCE_VERSION
       - go test -v
   post_build:
